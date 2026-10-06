@@ -1,21 +1,31 @@
 import java.util.Scanner;
+
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("\nEnter your name: ");
-        String userName =scanner.nextLine();
-        System.out.print("\nEnter your address: ");
-        String userAddress =scanner.nextLine();
-        System.out.print("\nEnter your age: ");
-        int userAge =scanner.nextInt();
-        System.out.print("\nEnter your weight: ");
-        float userWeight =scanner.nextFloat();
-        System.out.print("\nEnter your height: ");
-        double userHeight =scanner.nextDouble();
-        System.out.println("My name is "+userName+" and I'm "+userAge+" years old and I live in "+userAddress+" My weight is "+userWeight+" (kg) and My height "+userHeight+" (cm) ");
-        scanner.close();
+        System.out.print("Enter your name: ");
+        String userName = scanner.nextLine();
 
+        System.out.print("Enter your address: ");
+        String userAddress = scanner.nextLine();
+
+        System.out.print("Enter your age: ");
+        int userAge = scanner.nextInt();
+
+        System.out.print("Enter your weight (kg): ");
+        float userWeight = scanner.nextFloat();
+
+        System.out.print("Enter your height (cm): ");
+        double userHeight = scanner.nextDouble();
+
+
+        System.out.println("\nMy name is " + userName + " and I'm " + userAge
+                + " years old. I live in " + userAddress
+                + ". My weight is " + userWeight + " kg and my height is "
+                + userHeight + " cm.");
+
+        scanner.close();
     }
 }
 
